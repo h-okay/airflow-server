@@ -5,10 +5,10 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 
 2. ```cd``` into ~/airflow and run:
 ```bash
-docker-compose -f docker-compose.yml up -d
+make up
 ```
 
 3. turn down the server using:
 ```bash
-docker-compose -f docker-compose.yml down -d
+make down
 ```
