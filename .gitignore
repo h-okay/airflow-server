@@ -15,6 +15,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 # C extensions
 *.so
 
@@ -286,3 +287,7 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,redis,visualstudiocode,flask,dotenv
+
+# Airflow
+dags/
+logs/
