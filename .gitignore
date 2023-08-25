@@ -289,5 +289,5 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python,redis,visualstudiocode,flask,dotenv
 
 # Airflow
-dags/
-logs/
+dags/*
+logs/*

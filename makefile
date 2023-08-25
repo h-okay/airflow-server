@@ -9,10 +9,10 @@ venv/touchfile: requirements.txt
 
 # Server management
 up:
-	docker-compose -f docker-compose.yaml up --build -d 
+	docker compose up --build -d 
 
 down:
-	docker-compose -f docker-compose.yaml down --remove-orphans
+	docker compose down --remove-orphans
 
 restart: down up
 
@@ -31,5 +31,5 @@ lint: venv
 
 ftl: format test lint
 
-clean:
-	rm -rf venv
+clean: venv
+	. venv/bin/activate; pyclean . --debris; rm -rf venv
